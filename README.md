@@ -1,1 +1,0 @@
-Awaki Farmer mobile app
