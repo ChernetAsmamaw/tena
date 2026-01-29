@@ -1,152 +1,96 @@
-<<<<<<< HEAD
-Awaki Farmer mobile app
-=======
+# AwakiFarmer Mobile App
 
-# Tena AI - Healthcare Assistant for Rural Africa
+React Native mobile application for the AwakiFarmer AI + IoT farming platform.
 
-Tena AI is an AI-powered healthcare assistant designed to bring quality medical information and support to rural communities across Africa, starting with Rwanda.
+## 🚀 Getting Started
 
-## Features
+### Prerequisites
 
-### 🤖 AI Medical Assistant
-
-- 24/7 instant medical answers trained on evidence-based knowledge
-- Multi-language support for accessibility
-- Symptom checker and health information
-
-### ⚠️ Severity Assessment
-
-- Real-time symptom analysis
-- Urgency ranking system
-- Clear action recommendations
-- Identifies when professional help is needed
-
-### 👨‍⚕️ Doctor Dashboard
-
-- Monitor patient health statistics
-- Track patient progress and history
-- Schedule follow-ups
-- Direct communication with patients
-
-### 🏥 Admin Portal
-
-- Case management and referral system
-- Critical case routing
-- System analytics and monitoring
-- Automated escalation to medical professionals
-
-## Tech Stack
-
-- **Frontend**: React 19 + TypeScript
-- **Styling**: Tailwind CSS 4
-- **3D Graphics**: Three.js
-- **Build Tool**: Vite
-- **Routing**: React Router v7
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── Header.tsx           # Navigation header
-│   ├── Hero.tsx             # Hero section with 3D globe
-│   ├── Services.tsx         # Service offerings
-│   ├── Features.tsx         # Feature highlights
-│   ├── DownloadCTA.tsx      # Download call-to-action
-│   ├── Footer.tsx           # Footer section
-│   └── ComingSoon.tsx       # Coming soon page
-├── hooks/
-│   └── useIntersectionObserver.ts  # Scroll animation hook
-├── App.tsx                  # Main app component
-├── index.css               # Global styles with blue theme
-└── main.tsx                # Application entry point
-```
-
-## Design Theme
-
-- **Color Scheme**: Ocean Blue (#0369a1) and sky blue accents
-- **Animations**: Healthcare-themed with heartbeat and pulse effects
-- **Typography**: Outfit (display), Inter (body), Poppins (accent)
-- **Visual Style**: Modern glassmorphism with gradient backgrounds
-
-## Getting Started
+- Node.js 18+
+- Expo CLI: `npm install -g expo-cli`
+- iOS Simulator (Mac) or Android Studio
 
 ### Installation
 
 ```bash
+cd mobile
 npm install
 ```
 
-### Development
+### Run the App
 
 ```bash
-npm run dev
+# Start Expo dev server
+npm start
+
+# Run on iOS
+npm run ios
+
+# Run on Android
+npm run android
 ```
 
-The application will start at `http://localhost:5173`
+## 📱 Screens
 
-### Build
+### Welcome Screen
 
-```bash
-npm run build
-```
+- Onboarding with key features
+- Get Started and Sign In buttons
+- Agricultural green theme
 
-### Preview Build
+### Login Screen
 
-```bash
-npm run preview
-```
+- Phone number and password authentication
+- Offline mode support
+- Forgot password option
 
-## Healthcare Features
+### Signup Screen
 
-### For Users
+- User registration with validation
+- Terms and conditions checkbox
+- Password confirmation
 
-- Ask health questions 24/7
-- Get symptom severity assessment
-- Receive recommendations for professional care
-- Track health information privately
+### Home Screen
 
-### For Doctors
+- Farm overview dashboard
+- Real-time sensor data (soil moisture, temperature, growth)
+- AI recommendations
+- Quick actions (AI Assistant, Scan Crop, Analytics, Irrigation)
+- Recent activity feed
+- Bottom navigation
 
-- View assigned patient profiles
-- Monitor health statistics
-- Provide follow-up care
-- Communicate with patients directly
+## 🎨 Design Features
 
-### For Admins
+- **Lightweight**: Optimized for low-end devices and 2G/3G networks
+- **Offline-First**: Works without constant internet connection
+- **Green Theme**: Agricultural color palette (#22c55e)
+- **Native Feel**: Uses React Native components for smooth performance
+- **Responsive**: Adapts to different screen sizes
 
-- Manage system-wide referrals
-- Route critical cases appropriately
-- Monitor platform health
-- Track impact metrics
+## 🔧 Tech Stack
 
-## Deployment
+- React Native with Expo
+- TypeScript for type safety
+- React Navigation for routing
+- Expo Linear Gradient for smooth UI
+- Expo Vector Icons (Ionicons)
 
-The project is configured for deployment on modern hosting platforms. Build output goes to the `dist/` directory.
+## 📦 Key Features
 
-## Security & Privacy
+- ✅ Welcome/Onboarding flow
+- ✅ Authentication (Login/Signup)
+- ✅ Home dashboard with farm stats
+- ✅ AI recommendations
+- ✅ Quick action shortcuts
+- ✅ Activity timeline
+- ✅ Bottom tab navigation
 
-- End-to-end encryption for health data
-- HIPAA-compliant infrastructure (in progress)
-- Offline-first capability
-- Data sovereignty compliance for African markets
+## 🚧 Next Steps
 
-## Contributing
-
-We welcome contributions to improve healthcare access across Africa. Please check our contributing guidelines.
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Contact & Support
-
-- **Email**: support@tenai.health
-- **Website**: https://tenai.health
-- **Twitter**: @TenaAI_Health
-
----
-
-**Mission**: Bringing quality healthcare to everyone, powered by AI. Starting in Rwanda, scaling across Africa.
-
-> > > > > > > a35279b (Initial Tena AI project setup with healthcare theme, ocean blue colors, and AI assistant features)
+- Implement actual API integration
+- Add camera for crop disease scanning
+- Implement offline data sync
+- Add push notifications for alerts
+- Integrate real IoT sensor data
+- Add language localization
+- Implement dark mode
